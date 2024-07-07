@@ -34,12 +34,12 @@ class CustomerResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\TextColumn::make('no_telp'),
-                Tables\Columns\TextColumn::make('address'),
-                Tables\Columns\TextColumn::make('created_at')
+                Tables\Columns\TextColumn::make('name')->label('nama')->searchable()->searchable(),
+                Tables\Columns\TextColumn::make('no_telp')->label('notelp'),
+                Tables\Columns\TextColumn::make('address')->label('alamat'),
+                Tables\Columns\TextColumn::make('created_at')->label('dibuat pada')
                     ->dateTime(),
-                Tables\Columns\TextColumn::make('updated_at')
+                Tables\Columns\TextColumn::make('updated_at')->label('diubah pada')
                     ->dateTime(),
             ])
             ->filters([
