@@ -11,11 +11,6 @@ Filament-pos is a web-based point of sale application using Laravel Filament, wi
 - Create Customer 
 - Update Customer
 - Delete Customer (admin)
-
-## Installation and Running
-
-Clone the repository:
-
-```bash
-git clone https://github.com/agustrio1/filament-pos.git
-```
+- Supplier Management
+- Category Management
+- Product Management
